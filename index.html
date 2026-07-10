@@ -1,163 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StakeX Token Sale</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StakeX - Crypto Staking</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
+<div class="top-bar">
+  <div class="top-text">🚀 StakeX</div>
+  <div class="top-buttons">
+    <a href="#whitepaper"><button class="top-btn">Whitepaper</button></a>
+    <a href="#audit"><button class="top-btn">Audit</button></a>
+    <a href="#roadmap"><button class="top-btn">Roadmap</button></a>
+    <a href="login.html"><button class="top-btn launch-btn">Launch App</button></a>
+  </div>
+</div>
+
+<header class="nav">
   <div class="logo">StakeX</div>
+
   <nav>
-    <a href="#sale">Sale</a>
-    <a href="#history">History</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
     <a href="#tokenomics">Tokenomics</a>
-    <a href="#roadmap">Roadmap</a>
+    <a href="#contact">Contact</a>
   </nav>
-  <button id="connectBtn">Connect Wallet</button>
+
+  <a href="login.html" class="btn">Login / Signup</a>
 </header>
 
-<section class="hero" id="sale">
+<section class="hero" id="home">
   <div class="hero-left">
-    <div class="badge">🚀 Presale Live</div>
-    <h1>Buy StakeX Token With USDT</h1>
+    <span class="tag">WEB3 STAKING PLATFORM</span>
+
+    <h1>Earn Mining Rewards With Crypto Staking</h1>
+
     <p>
-      Initial price starts at <b>$0.05</b>. Every <b>10,000 STX</b> sold,
-      token price increases by <b>$0.025</b>.
+      Stake tokens, build your network, unlock rank rewards,
+      royalty income and grow your passive income ecosystem.
     </p>
 
-    <div class="stats">
-      <div>
-        <span>Start Price</span>
-        <b>$0.050</b>
-      </div>
-      <div>
-        <span>Price Step</span>
-        <b>$0.025</b>
-      </div>
-      <div>
-        <span>Step Size</span>
-        <b>10,000 STX</b>
-      </div>
+    <div class="hero-buttons">
+      <a href="login.html" class="btn">Get Started</a>
+      <a href="#whitepaper" class="btn-secondary">View Whitepaper</a>
     </div>
   </div>
 
-  <div class="sale-box">
-    <h2>Token Sale</h2>
+  <div class="hero-right">
+    <div class="stats-card">
+      <h3>Live Platform Stats</h3>
 
-    <div class="info">
-      <span>Current Price</span>
-      <b id="currentPrice">$0.050</b>
+      <div class="stat"><span>Total Stake</span><b>$2,400,000</b></div>
+      <div class="stat"><span>Total Users</span><b>18,420</b></div>
+      <div class="stat"><span>Total Rewards</span><b>$720,000</b></div>
+      <div class="stat"><span>Active Stakers</span><b>12,860</b></div>
     </div>
-
-    <div class="info">
-      <span>Next Price</span>
-      <b id="nextPrice">$0.075</b>
-    </div>
-
-    <div class="info">
-      <span>Total Sold</span>
-      <b id="totalSold">0 STX</b>
-    </div>
-
-    <div class="info">
-      <span>Next Price After</span>
-      <b id="nextAfter">10,000 STX</b>
-    </div>
-
-    <div class="progress-wrap">
-      <div class="progress-top">
-        <span>Stage Progress</span>
-        <b id="stagePercent">0%</b>
-      </div>
-      <div class="progress">
-        <div id="progressBar"></div>
-      </div>
-    </div>
-
-    <label>Enter USDT Amount</label>
-    <input type="number" id="usdtAmount" placeholder="Example: 100" />
-
-    <label>You Will Receive</label>
-    <input type="text" id="tokenAmount" placeholder="0 STX" readonly />
-
-    <button id="buyBtn">Buy Token</button>
-
-    <p id="msg"></p>
   </div>
 </section>
 
-<section class="history-section" id="history">
-  <div class="history-box">
-    <h2>Buy History</h2>
+<section class="section" id="about">
+  <span class="tag">ABOUT</span>
+  <h2>About StakeX</h2>
+  <p>
+    StakeX is a Web3 staking platform where users can stake tokens,
+    earn self mining income, level mining rewards, rank income,
+    royalty income and track all rewards from one fast dashboard.
+  </p>
+</section>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Time</th>
-          <th>USDT</th>
-          <th>STX</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tbody id="historyBody"></tbody>
-    </table>
+<section class="section" id="features">
+  <span class="tag">FEATURES</span>
+  <h2>Platform Features</h2>
 
-    <button id="clearHistoryBtn">Clear Demo History</button>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>Self Mining</h3>
+      <p>Earn daily staking rewards from your own package.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Level Mining</h3>
+      <p>Earn income from your direct and level team activity.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Rank Rewards</h3>
+      <p>Unlock new ranks and receive rank-based rewards.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Royalty Income</h3>
+      <p>Receive extra royalty income from platform reward pools.</p>
+    </div>
   </div>
 </section>
 
-<section class="tokenomics" id="tokenomics">
+<section class="section" id="tokenomics">
+  <span class="tag">TOKENOMICS</span>
   <h2>Tokenomics</h2>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Total Supply</h3>
-      <p>1,000,000 STX</p>
-    </div>
-
-    <div class="card">
-      <h3>Presale</h3>
-      <p>40%</p>
-    </div>
-
-    <div class="card">
-      <h3>Liquidity</h3>
-      <p>30%</p>
-    </div>
-
-    <div class="card">
-      <h3>Marketing</h3>
-      <p>20%</p>
-    </div>
+  <div class="stats-card token-box">
+    <div class="stat"><span>Total Supply</span><b>100,000,000</b></div>
+    <div class="stat"><span>Staking Pool</span><b>40%</b></div>
+    <div class="stat"><span>Liquidity</span><b>20%</b></div>
+    <div class="stat"><span>Marketing</span><b>10%</b></div>
+    <div class="stat"><span>Development</span><b>10%</b></div>
+    <div class="stat"><span>Team Reserve</span><b>20%</b></div>
   </div>
 </section>
 
-<section class="roadmap" id="roadmap">
+<section class="section" id="whitepaper">
+  <span class="tag">WHITEPAPER</span>
+  <h2>Whitepaper</h2>
+  <p>
+    StakeX whitepaper will include staking rules, reward system,
+    rank system, royalty pool, tokenomics and platform roadmap.
+  </p>
+  <a href="login.html" class="btn">Launch Dashboard</a>
+</section>
+
+<section class="section" id="audit">
+  <span class="tag">AUDIT</span>
+  <h2>Smart Contract Audit</h2>
+  <p>
+    Audit report will be added after smart contract development
+    and security testing.
+  </p>
+</section>
+
+<section class="section" id="roadmap">
+  <span class="tag">ROADMAP</span>
   <h2>Roadmap</h2>
 
-  <div class="road-card">
-    <h3>Phase 1</h3>
-    <p>Website launch, community building, and presale dashboard.</p>
-  </div>
-
-  <div class="road-card">
-    <h3>Phase 2</h3>
-    <p>USDT smart contract integration and live token buy system.</p>
-  </div>
-
-  <div class="road-card">
-    <h3>Phase 3</h3>
-    <p>DEX listing, liquidity launch, and ecosystem expansion.</p>
+  <div class="feature-grid">
+    <div class="feature-card"><h3>Phase 1</h3><p>Website UI and dashboard development.</p></div>
+    <div class="feature-card"><h3>Phase 2</h3><p>Smart contract and staking logic.</p></div>
+    <div class="feature-card"><h3>Phase 3</h3><p>Web3 wallet connection and live data.</p></div>
+    <div class="feature-card"><h3>Phase 4</h3><p>Launch, audit and community growth.</p></div>
   </div>
 </section>
 
-<footer>
-  <p>© 2026 StakeX Token. All Rights Reserved.</p>
+<section class="section" id="contact">
+  <span class="tag">CONTACT</span>
+  <h2>Contact Us</h2>
+
+  <div class="feature-grid">
+    <div class="feature-card"><h3>Email</h3><p>support@stakex.com</p></div>
+    <div class="feature-card"><h3>Telegram</h3><p>@StakeXOfficial</p></div>
+    <div class="feature-card"><h3>Twitter</h3><p>@StakeXGlobal</p></div>
+    <div class="feature-card"><h3>Website</h3><p>www.stakex.com</p></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 StakeX. All Rights Reserved.</p>
 </footer>
 
-<script src="app.js"></script>
 </body>
 </html>
